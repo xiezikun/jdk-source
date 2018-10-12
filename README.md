@@ -1,4 +1,4 @@
-# JDK源码相关  
+﻿# JDK源码相关  
   JDK源码【1.7/1.8/1.9】，方便查看代码；  
   Java官方demo。
 
@@ -192,3 +192,6 @@ Visitor:
 
     * javax.lang.model.element.Element 和javax.lang.model.element.ElementVisitor
     * javax.lang.model.type.TypeMirror 和javax.lang.model.type.TypeVisitor
+
+源码阅读顺序
+	https://blog.csdn.net/qq_21033663/article/details/79571506
