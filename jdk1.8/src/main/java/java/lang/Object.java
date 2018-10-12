@@ -29,13 +29,21 @@ package java.lang;
  * Class {@code Object} is the root of the class hierarchy.
  * Every class has {@code Object} as a superclass. All objects,
  * including arrays, implement the methods of this class.
- *
+ * 源码阅读的第一个类  主要关注 wait() notify() notifyAll() wait(timeout) 方法
  * @author  unascribed
  * @see     java.lang.Class
  * @since   JDK1.0
  */
 public class Object {
 
+
+    /**
+     * native 修饰的是本地方法  调用 windows 或者linux的本地方法
+     *
+     * 通常，为了让JVM找到你的本地函数，它们必须以某种方式命名。
+     * 例如，java.lang.Object.registerNatives对应的C函数被命名Java_java_lang_Object_registerNatives。
+     * 通过使用registerNatives（或者说，JNI函数RegisterNatives），你可以任意指定你的C函数。
+     */
     private static native void registerNatives();
     static {
         registerNatives();
